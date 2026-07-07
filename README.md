@@ -50,7 +50,7 @@ does **not** ship the full experimental reproduction package:
 - the baseline models and the tuned per-dataset configurations / checkpoints.
 
 The scripts here operate on **randomly generated toy data only**. They
-demonstrate the *mechanics* of the method, not the reported accuracy.
+demonstrate the *mechanics* of the method.
 
 ---
 
@@ -79,8 +79,7 @@ confirms that gradients propagate. The training script pre-trains the
 autoencoder, initialises the cluster centers via K-Means, then runs joint
 optimisation with early stopping. Because the toy graph is random noise with no
 learnable structure, the validation MRR stays near chance — this is expected;
-the goal is to show that the loop trains and converges, not to reproduce any
-reported number.
+the goal is to show that the loop trains and converges.
 
 ---
 
